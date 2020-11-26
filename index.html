@@ -12,6 +12,17 @@
   <link rel="stylesheet" media="screen and (max-width: 1000px)" href="./tablet.css">
   <link rel="stylesheet" media="screen and ((max-width: 520px) or (max-height: 500px))" href="./phone.css">
 
+  <script>
+    document.addEventListener("load", notification());
+    document.addEventListener("resize", notification());
+
+    function notification() {
+      if(window.innerWidth < 710 ) {
+        alert("This Website does not support this screen width")
+      }
+    }
+  </script>
+
   <title>Lipstick | Home</title>
 </head>
 <body>
